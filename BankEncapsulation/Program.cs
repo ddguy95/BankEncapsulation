@@ -13,6 +13,7 @@ namespace BankEncapsulation
             double amountToDeposit = double.Parse(Console.ReadLine());
 
             ba.Deposit(amountToDeposit);
+            ba.Deposit(302.45);
             double userBalance = ba.GetBalance();
 
             Console.WriteLine($"Your current balance is: ${userBalance}");

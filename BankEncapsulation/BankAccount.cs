@@ -12,7 +12,7 @@ namespace BankEncapsulation
         public void Deposit(double amount)
         {
             Console.WriteLine($"Your making a deposit of ${amount} to your account!!");
-            _balance = amount;
+            _balance += amount;
         }
         
         public double GetBalance() 
@@ -20,6 +20,10 @@ namespace BankEncapsulation
             return _balance;
         }
         
+
+        
     }
    
 }
+
+
